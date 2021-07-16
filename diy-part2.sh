@@ -15,3 +15,4 @@
 
 # set zram_comp_algo default to lz4
 sed -i 's/zram_comp_algo="lzo"/zram_comp_algo="lz4"/g' package/system/zram-swap/files/zram.init
+echo vm.swappiness=10 >> package/base-files/files/etc/sysctl.conf
